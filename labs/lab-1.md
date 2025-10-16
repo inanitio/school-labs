@@ -15,7 +15,10 @@ title: Практическая работа 1
 
 Шифрование.
 В сообщении расставляются контрольные биты на позициях, равных степеням двойки
-`<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">0</span>010<span style="color:red">0</span>0101001<span style="color:red">0</span>0`
+
+<pre style="font-family: monospace; background: #f0f0f0; padding: 10px;">
+<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">0</span>010<span style="color:red">0</span>0101001<span style="color:red">0</span>0
+</pre>
 <img class="img-small" src="{{site.baseurl}}/resources/labs/lab-1/01_simple.png">
 
 ### Данные:
