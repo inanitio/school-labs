@@ -14,7 +14,7 @@ title: Практическая работа 1
 `101001010010`
 
 Шифрование.
-В сообщении расставляются контрольные биты на позициях, равных степеням двойки
+В сообщении расставляются <span style="color:red">контрольные биты</span> на позициях, равных степеням двойки
 
 <pre style="font-family: monospace; #f3f6fa: transparent; padding: 10px;">
 101001010010 -> <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">0</span>010<span style="color:red">0</span>0101001<span style="color:red">0</span>0
