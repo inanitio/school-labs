@@ -37,3 +37,7 @@ title: Практическая работа 1
 
 <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">0</span>010<span style="color:red">0</span>0101001<span style="color:red">0</span>0 ->
 <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>010<span style="color:red">1</span>0101001<span style="color:red">0</span>0
+
+Находим <span style="color:blue">бит чётности</span>, применив XOR ко всему сообщению, и добавляем его в конец
+<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>010<span style="color:red">1</span>0101001<span style="color:red">0</span>0 ->
+<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>010<span style="color:red">1</span>0101001<span style="color:red">0</span>0<span style="color:blue">1</span>
