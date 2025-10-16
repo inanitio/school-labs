@@ -28,8 +28,8 @@ title: Практическая работа 1
 | Сообщение| <span style="color:red">0</span> | <span style="color:red">0</span> | 1   | <span style="color:red">0</span> | 0   | 1   | 0   | <span style="color:red">0</span> | 0   | 1   | 0   | 1   | 0   | 0   | 1   | <span style="color:red">0</span> | 0   | -          |
 | Контр. 1 | x  |     | x  |     | x  |     | x  |     | x  |     | x  |     | x  |     | x  |     | x  | <span style="color:red">0</span>          |
 | Контр. 2 |     | x  | x  |     |     | x  | x  |     |     | x  | x  |     |     | x  | x  |     |     | <span style="color:red">0</span>          |
-| Контр. 4 |     |     |     | x  | x  | x  | x  |     |     |     |     | x  | x  | x  | x  |     |     | <span style="color:red">0</span>          |
-| Контр. 8 |     |     |     |     |     |     |     | x  | x  | x  | x  | x  | x  | x  | x  |     |     | <span style="color:red">0</span>          |
+| Контр. 4 |     |     |     | x  | x  | x  | x  |     |     |     |     | x  | x  | x  | x  |     |     | <span style="color:red">1</span>          |
+| Контр. 8 |     |     |     |     |     |     |     | x  | x  | x  | x  | x  | x  | x  | x  |     |     | <span style="color:red">1</span>          |
 | Контр. 16|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     | x  | x  | <span style="color:red">0</span>          |
 
 - Заменить значения контрольных битов на соответствующие новые
