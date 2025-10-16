@@ -17,7 +17,7 @@ title: Практическая работа 1
 В сообщении расставляются контрольные биты на позициях, равных степеням двойки
 
 <pre style="font-family: monospace; background: #f0f0f0; padding: 10px;">
-<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">0</span>010<span style="color:red">0</span>0101001<span style="color:red">0</span>0
+101001010010 -> <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">0</span>010<span style="color:red">0</span>0101001<span style="color:red">0</span>0
 </pre>
 
 После чего вычисляются значения контрольных битов, начиная с первого бита по следующему правилу:
