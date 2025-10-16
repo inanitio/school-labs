@@ -35,5 +35,6 @@ title: Практическая работа 1
 - Заменить значения контрольных битов на соответствующие новые
 
 <pre style="font-family: monospace; background: transparent; padding: 10px;">
-<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">0</span>010<span style="color:red">0</span>0101001<span style="color:red">0</span>0
+<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">0</span>010<span style="color:red">0</span>0101001<span style="color:red">0</span>0 ->
+<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>010<span style="color:red">1</span>0101001<span style="color:red">0</span>0 ->
 </pre>
