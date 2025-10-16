@@ -18,7 +18,7 @@ title: Практическая работа 1
 101001010010 -> <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">0</span>010<span style="color:red">0</span>0101001<span style="color:red">0</span>0
 
 После чего вычисляются значения контрольных битов, начиная с первого бита по следующему правилу:
-- Применяется XOR ко всем битам, которые контролируются данным контрольным битом. Контрольный бит на позиции i контролирует группы по i идущих подряд элементов через i элементов, начиная со своей позиции
+- Применяется XOR (сумма по модулю 2) ко всем битам, которые контролируются данным контрольным битом. Контрольный бит на позиции i контролирует группы по i идущих подряд элементов через i элементов, начиная со своей позиции
 
 | Биты     | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | Контр. бит |
 |----------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|------------|
@@ -49,3 +49,18 @@ title: Практическая работа 1
 <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>0<span style="color:#f79646">1</span>0<span style="color:red">1</span>0101001<span style="color:red">0</span>0<span style="color:#0fb5f1">1</span> ->
 
 <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>0<span style="color:#f79646">0</span>0<span style="color:red">1</span>0101001<span style="color:red">0</span>0<span style="color:#0fb5f1">1</span>
+
+**Расшифрование.** 
+
+Вновь считаем <span style="color:#0fb5f1">бит чётности</span> всего сообщения, получаем <span style="color:#0fb5f1">1</span>, убираем его из сообщения и запоминаем.
+
+<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>0<span style="color:#f79646">0</span>0<span style="color:red">1</span>0101001<span style="color:red">0</span>0
+
+| Биты     | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | Контр. бит |
+|----------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|------------|
+| Сообщение| <span style="color:red">0</span> | <span style="color:red">0</span> | 1   | <span style="color:red">1</span> | 0   | <span style="color:#f79646">0</span>   | 0   | <span style="color:red">1</span> | 0   | 1   | 0   | 1   | 0   | 0   | 1   | <span style="color:red">0</span> | 0   | -          |
+| 1 | x  |     | x  |     | x  |     | x  |     | x  |     | x  |     | x  |     | x  |     | x  | <span style="color:red">0</span>          |
+| 2 |     | x  | x  |     |     | x  | x  |     |     | x  | x  |     |     | x  | x  |     |     | <span style="color:red">0</span>          |
+| 4 |     |     |     | x  | x  | x  | x  |     |     |     |     | x  | x  | x  | x  |     |     | <span style="color:red">1</span>          |
+| 8 |     |     |     |     |     |     |     | x  | x  | x  | x  | x  | x  | x  | x  |     |     | <span style="color:red">1</span>          |
+| 16|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     | x  | x  | <span style="color:red">0</span>          |
