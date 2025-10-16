@@ -13,8 +13,7 @@ title: Практическая работа 1
 Нам требуется передать сообщение, например,
 101001010010
 
-Шифрование.
-В сообщении расставляются <span style="color:red">контрольные биты</span> на позициях, соответствующих степеням двойки
+**Шифрование.** В сообщении расставляются <span style="color:red">контрольные биты</span> на позициях, соответствующих степеням двойки
 
 101001010010 -> <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">0</span>010<span style="color:red">0</span>0101001<span style="color:red">0</span>0
 
@@ -43,4 +42,4 @@ title: Практическая работа 1
 <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>010<span style="color:red">1</span>0101001<span style="color:red">0</span>0 ->
 <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>010<span style="color:red">1</span>0101001<span style="color:red">0</span>0<span style="color:#0fb5f1">1</span>
 
-Передача. Предположим, что сообщение передаётся по не очень проверенным путям, из-за чего в нём появилась <span style="color:darkyellow">ошибка</span>.
+**Передача.** Предположим, что сообщение передаётся по не очень проверенным путям, из-за чего в нём появилась <span style="color:yellow">ошибка</span>.
