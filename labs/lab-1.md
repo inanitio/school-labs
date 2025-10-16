@@ -11,14 +11,12 @@ title: Практическая работа 1
 
 ### Алгоритм построения кода Хемминга
 Нам требуется передать сообщение, например,
-`101001010010`
+101001010010
 
 Шифрование.
 В сообщении расставляются <span style="color:red">контрольные биты</span> на позициях, соответствующих степеням двойки
 
-<pre style="font-family: monospace; #f3f6fa: transparent; padding: 10px;">
 101001010010 -> <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">0</span>010<span style="color:red">0</span>0101001<span style="color:red">0</span>0
-</pre>
 
 После чего вычисляются значения контрольных битов, начиная с первого бита по следующему правилу:
 - Применяется XOR ко всем битам, которые контролируют данный контрольный бит. Контрольный бит на позиции i контролирует группы по i идущих подряд элементов через i элементов, начиная со своей позиции
@@ -37,7 +35,5 @@ title: Практическая работа 1
 
 - Заменить значения контрольных битов на соответствующие новые
 
-<pre style="font-family: monospace; background: #f3f6fa; padding: 10px;">
 <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">0</span>010<span style="color:red">0</span>0101001<span style="color:red">0</span>0 ->
 <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>010<span style="color:red">1</span>0101001<span style="color:red">0</span>0
-</pre>
