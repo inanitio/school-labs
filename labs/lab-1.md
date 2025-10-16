@@ -42,6 +42,6 @@ title: Практическая работа 1
 <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>010<span style="color:red">1</span>0101001<span style="color:red">0</span>0 ->
 <span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>010<span style="color:red">1</span>0101001<span style="color:red">0</span>0<span style="color:#0fb5f1">1</span>
 
-**Передача.** Предположим, что сообщение передаётся по не очень проверенным путям, из-за чего в нём появилась <span style="color:yellow">ошибка</span> в 6ом бите.
-<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>0<span style="color:yellow">1</span>0<span style="color:red">1</span>0101001<span style="color:red">0</span>0<span style="color:#0fb5f1">1</span> ->
-<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>0<span style="color:yellow">0</span>0<span style="color:red">1</span>0101001<span style="color:red">0</span>0<span style="color:#0fb5f1">1</span>
+**Передача.** Предположим, что сообщение передаётся по не очень проверенным путям, из-за чего в нём появилась <span style="color:#f79646">ошибка</span> в 6ом бите.
+<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>0<span style="color:#f79646">1</span>0<span style="color:red">1</span>0101001<span style="color:red">0</span>0<span style="color:#0fb5f1">1</span> ->
+<span style="color:red">0</span><span style="color:red">0</span>1<span style="color:red">1</span>0<span style="color:#f79646">0</span>0<span style="color:red">1</span>0101001<span style="color:red">0</span>0<span style="color:#0fb5f1">1</span>
