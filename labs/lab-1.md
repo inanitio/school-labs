@@ -26,11 +26,11 @@ title: Практическая работа 1
 | Биты     | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | Контр. бит |
 |----------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|------------|
 | Сообщение| <span style="color:red">0</span> | <span style="color:red">0</span> | 1   | <span style="color:red">0</span> | 0   | 1   | 0   | <span style="color:red">0</span> | 0   | 1   | 0   | 1   | 0   | 0   | 1   | <span style="color:red">0</span> | 0   | -          |
-| Контр. 1 | ❌  |     | ❌  |     | ❌  |     | ❌  |     | ❌  |     | ❌  |     | ❌  |     | ❌  |     | ❌  | <span style="color:red">0</span>          |
-| Контр. 2 |     | ❌  | ❌  |     |     | ❌  | ❌  |     |     | ❌  | ❌  |     |     | ❌  | ❌  |     |     | <span style="color:red">0</span>          |
-| Контр. 4 |     |     |     | ❌  | ❌  | ❌  | ❌  |     |     |     |     | ❌  | ❌  | ❌  | ❌  |     |     | <span style="color:red">0</span>          |
-| Контр. 8 |     |     |     |     |     |     |     | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |     |     | <span style="color:red">0</span>          |
-| Контр. 16|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     | ❌  | ❌  | <span style="color:red">0</span>          |
+| Контр. 1 | x  |     | x  |     | x  |     | x  |     | x  |     | x  |     | x  |     | x  |     | x  | <span style="color:red">0</span>          |
+| Контр. 2 |     | x  | x  |     |     | x  | x  |     |     | x  | x  |     |     | x  | x  |     |     | <span style="color:red">0</span>          |
+| Контр. 4 |     |     |     | x  | x  | x  | x  |     |     |     |     | x  | x  | x  | x  |     |     | <span style="color:red">0</span>          |
+| Контр. 8 |     |     |     |     |     |     |     | x  | x  | x  | x  | x  | x  | x  | x  |     |     | <span style="color:red">0</span>          |
+| Контр. 16|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     | x  | x  | <span style="color:red">0</span>          |
 
 - Заменить значения контрольных битов на соответствующие новые
 
