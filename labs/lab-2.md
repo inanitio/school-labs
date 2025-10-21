@@ -11,7 +11,7 @@ title: Практическая работа 2
 Для того, чтобы открыть файл, имеется функция `open()`
 
 ```python
-file = open('data.txt', 'r') # 'r' — чтение, 'w' — запись
+file = open('data.txt', 'r') # 'r' - чтение, 'w' - запись
 content = file.read()
 # ...
 file.close()
@@ -22,4 +22,16 @@ file.close()
 with open('data.txt', 'r') as file:
     content = file.read()
 ```
+Но чаще всего, если файл большой, то чтение всего содержимого в память неэффективно. Вместо этого лучше обрабатывать файл построчно. Например, в ЕГЭ встречаются excel-файлы, которые очень удобно построчно интерпретировать в качестве массивов, чтобы потом с ними работать
+```python
+with open('data.csv', 'r') as file:
+    for line_num, line in enumerate(file, 1):
+        line = list(map(int, line.split(";"))) # 234;345;76;89 --> [234, 345, 76, 89]
+        print(f"Строка {line_num}: {line}")
+```
 
+## Задача
+Требуется открыть файл `alice.txt` и вывести 20 наиболее встречающихся в нём слов.
+<a class="btn-download" href="{{site.baseurl}}/resources/labs/lab-2/alice.txt">Скачать текст</a>
+### Исключения
+Использование методов `.count()` и `.sort` под запретом
