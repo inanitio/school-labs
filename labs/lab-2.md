@@ -36,4 +36,4 @@ with open('data.csv', 'r') as file:
 <a class="btn-download" href="{{site.baseurl}}/resources/labs/lab-2/alice.txt">Скачать текст</a>
 
 ### Исключения
-Использование методов `.count()` и `.sort` под запретом
+Использование методов `.count()` и `.sort()` под запретом
