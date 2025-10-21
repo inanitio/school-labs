@@ -80,7 +80,7 @@ title: Практическая работа 3
 
 ### Модели данных для решений
 
-Теперь вам предоставлены модели данных в формате классов. Найти их можно в [репозитории данной лабораторной работы][rep]. 
+Теперь вам предоставлены модели данных в формате классов. Найти их можно в [репозитории данной практической работы][rep]. 
 Для полной работы вам потребуется установить часть модулей, однако если отрисовка для визуального анализа не нужна, то 
 в `lab/__init__` удалите все связанное с draw.
 
@@ -94,6 +94,62 @@ title: Практическая работа 3
 def main(space, start, end, dice_1, dice_2):
     pass
 ```
+### Как использовать модели и что можно с ними сделать
+
+Основной способ создания задачи
+
+```python
+from lab import models
+from lab import generators
+import solution
+import random
+
+random.seed(1)  # номер задания
+
+size = random.randint(5, 12)  # генерация количества вершин
+space = models.Space(size, generators.barabasi_albert)  # генерация космоса
+
+dice_1 = models.Dice()  # первый кубик
+dice_2 = models.Dice()  # второй кубик
+
+points_pool = list(range(size))  # все возможные точки
+random.shuffle(points_pool)
+start = points_pool.pop()  # начальная точка
+end = points_pool.pop()  # конечная точка
+
+result = solution.main(space, start, end, dice_1, dice_2)  # запуск вашей программы
+
+print(result)  # вывод вашей программы
+```
+
+Методы и классы
+
+```
+space - космос
+route - маршрут
+
+space.size - количество вершин
+len(space) - количество вершин
+space.routes - все маршруты
+space[i] - маршруты из вершины i (с учетом None-ребер)
+space[i, j] - маршрут между i и j вершиной
+space[j, i] - маршрут между j и i вершиной
+
+route.length - длина маршрута
+len(route) - длина маршрута
+list(route) - все ячейки маршрута
+route.route - все ячейки маршрута
+route[i] - i-ая ячейка маршрута
+```
+
+Вариант прохода маршрутов
+
+```python
+for i, j, route in space.routes:
+    print(i,  # номер начальной вершины
+          j,  # номер конечной вершины
+          route)  # маршрут между i и j вершиной
+```
 
 [index]: {{site.baseurl}}/index
-[rep]: https://github.com/octo-gone/ifmsh-lab-spaceship
+[rep]: https://github.com/inanitio/lab-spaceship
