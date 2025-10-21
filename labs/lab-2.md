@@ -9,14 +9,14 @@ title: Лабораторная работа 3
 
 ## Теория
 
-Всем известна игра в жанре [Match-3]({{site.baseurl}}/labs/lab-3-game). Такой тип игр подразумевает объединение на поле шариков в комбинации из 3 или больше **в ряд**,
+Всем известна игра в жанре [Match-3]({{site.baseurl}}/labs/lab-2-game). Такой тип игр подразумевает объединение на поле шариков в комбинации из 3 или больше **в ряд**,
 после чего они лопаются добавляя очки в копилку. А если повезет, то исчезнувшие шарики повлекут за собой комбинацию исчезновений
 других шариков. 
 
 Обычно в таких играх также сверху добавляются новые шарики, забивая пустоты, но в данной задаче добавление новых шариков не будет, а сами шарики будут заменены на числа.
 Клетки с шариками имеют обозначения от 1 до 5, пустая - ноль.
 
-<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-3/07_demotivator.png">
+<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-2/07_demotivator.png">
 
 ### Команды
 
@@ -62,7 +62,7 @@ if (field(0, 0) == field(1, 0) == field(2, 0)) {
 Ваша задача проверить, можно ли сдвинуть шарик по указанным координате и направлению (для получения комбинации). Не забывайте
 учитывать границы поля и размеры возможной комбинации. На вход подается позиция и направление: `0 4 up`, `10 29 right` и т.п.
 
-<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-3/00_zero_field.png">
+<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-2/00_zero_field.png">
 
 > **После выполнения будет доступна команда:** `move(<x>, <y>, <dir>)` - сдвинуть шарик на поле (если это возможно), указав 
 > направление (`up`, `down`, `left`, `right`), используется не только для создания групп шариков, но и для смещения после 
@@ -80,15 +80,15 @@ if (field(0, 0) == field(1, 0) == field(2, 0)) {
 Передвигать шарики не нужно. Лопнуть нужно только один шарик в комбинации, остальные лопнутся сами (так как это было сделано в 
 прошлой задаче). 
 
-<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-3/01_first_field.png">
-<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-3/02_first_field_sol.png">
+<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-2/01_first_field.png">
+<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-2/02_first_field_sol.png">
 
 **4 часть**  
 Найти максимальную комбинацию из шариков, которую можно составить передвинув один шарик. Укажите координату и 
 направление сдвига в ответе, а также результат в очках (количество убранных шариков).
 
-<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-3/03_second_field.png">
-<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-3/04_second_field_sol.png">
+<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-2/03_second_field.png">
+<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-2/04_second_field_sol.png">
 
 > Ответ в примере: (2, 4, "up"), 5 очков
 
@@ -97,11 +97,11 @@ if (field(0, 0) == field(1, 0) == field(2, 0)) {
 комбинации. Укажите координату и направление сдвига в ответе, а также результат в очках (количество убранных шариков).
 Новые комбинации лопаться автоматически **не будут**.
 
-<img src="{{site.baseurl}}/resources/labs/lab-3/05_hard.png">
+<img src="{{site.baseurl}}/resources/labs/lab-2/05_hard.png">
 
 > Ответ в примере: (1, 0, "up"), 13 очков
 
-<img src="{{site.baseurl}}/resources/labs/lab-3/06_hard_2.png">
+<img src="{{site.baseurl}}/resources/labs/lab-2/06_hard_2.png">
 
 > Ответ в примере: (3, 1, "down"), 19 очков
 
