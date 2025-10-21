@@ -32,6 +32,8 @@ with open('data.csv', 'r') as file:
 
 ## Задача
 Требуется открыть файл `alice.txt` и вывести 20 наиболее встречающихся в нём слов.
+
 <a class="btn-download" href="{{site.baseurl}}/resources/labs/lab-2/alice.txt">Скачать текст</a>
+
 ### Исключения
 Использование методов `.count()` и `.sort` под запретом
