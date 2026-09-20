@@ -318,7 +318,7 @@ window.onload = function () {
         // Draw title
         context.fillStyle = "#ffffff";
         context.font = "24px Consolas";
-        context.fillText("IFMSH Лабораторная работа 3", 10, 30);
+        context.fillText("Match 3", 10, 30);
 
         // Display fps
         context.fillStyle = "#ffffff";
