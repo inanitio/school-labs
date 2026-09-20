@@ -20,3 +20,4 @@ title: Информатика. 7 класс 2026-2027
 [lab_1]: {{site.baseurl}}/labs/lab-1
 [lab_2]: {{site.baseurl}}/labs/lab-2
 [lab_3]: {{site.baseurl}}/labs/lab-3
+[lab_4]: {{site.baseurl}}/labs/lab-4
