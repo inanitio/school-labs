@@ -20,13 +20,13 @@ title: Космический корабль
 Каждое ребро описывается последовательностью ячеек, каждая ячейка определяет позицию перемещения для корабля. Ячейки различаются
 на пустые и цветные.
 
-<img id="example_1" src="{{site.baseurl}}/resources/labs/lab-3/00_route_example.png"/>
+<img id="example_1" src="{{site.baseurl}}/resources/labs/lab-4/00_route_example.png"/>
 
 Ребра как таковые не имеют направления, однако перемещение в одну сторону и в другую определяет чтение последовательности 
 ячеек в ребре. Граф не имеет каких либо усложнений или необычных форм.
 
-<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-3/01_gridlike.png"/>
-<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-3/02_random_pos.png"/>
+<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-4/01_gridlike.png"/>
+<img class="img-small" src="{{site.baseurl}}/resources/labs/lab-4/02_random_pos.png"/>
 
 #### Перемещение по ребрам
 
@@ -40,15 +40,15 @@ title: Космический корабль
 
 Пример:
 
-<img src="{{site.baseurl}}/resources/labs/lab-3/03_dice_1.png"/>
+<img src="{{site.baseurl}}/resources/labs/lab-4/03_dice_1.png"/>
 
-<img src="{{site.baseurl}}/resources/labs/lab-3/04_dice_2.png"/>
+<img src="{{site.baseurl}}/resources/labs/lab-4/04_dice_2.png"/>
 
 Другой пример:
 
-<img src="{{site.baseurl}}/resources/labs/lab-3/05_dice_1.png"/>
+<img src="{{site.baseurl}}/resources/labs/lab-4/05_dice_1.png"/>
 
-<img src="{{site.baseurl}}/resources/labs/lab-3/06_dice_2.png"/>
+<img src="{{site.baseurl}}/resources/labs/lab-4/06_dice_2.png"/>
 
 #### Пример перемещения
 
@@ -65,7 +65,7 @@ title: Космический корабль
 передвинемся не на 6-ую по счету ячейку, а на 7-ую, так как зеленую клетку мы прошли за счет зеленого хода. Это означает, 
 что фактически у нас было 6 ходов и один цветной, 2 прошли, после зеленую клетку за счет зеленого хода пропустили и после прошли еще 4.
 
-<img src="{{site.baseurl}}/resources/labs/lab-3/07_example.png"/>
+<img src="{{site.baseurl}}/resources/labs/lab-4/07_example.png"/>
 
 Точный формат кубиков будет определен позже.
 
