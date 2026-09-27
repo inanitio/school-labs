@@ -5,19 +5,21 @@ title: Подсчёт слов
 
 > Каждое приключение требует первого шага.
 
+## Теория  
 
-## Задача
-
-Загрузите файл <a href="{{site.baseurl}}/resources/labs/lab-1/alice.txt" download class="download-link">alice.txt</a>
-Для того, чтобы открыть файл, имеется функция `open()`
+Вам предоставлен текст "Алиса в стране чудес" на английском языке. Чтобы открыть этот файл, напишите следуюую программу
 
 ```python
-file = open('data.txt', 'r') # 'r' - чтение, 'w' - запись
-content = file.read()
-# ...
-file.close()
+with open('alice.txt', 'r') as file:
+    text = file.read()
+
+print(text)
 ```
 
+## Задача  
+
+Требуется открыть файл `alice.txt` и вывести 20 наиболее встречающихся в нём слов.
+
+<a class="btn-download" href="{{site.baseurl}}/resources/labs/lab-1/alice.txt">Скачать текст</a>
 
 
-[index]: {{site.baseurl}}/index
