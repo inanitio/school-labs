@@ -8,7 +8,7 @@ title: Подсчёт слов
 
 ## Задача
 
-Загрузите файл <a class="btn-download" href="{{site.baseurl}}/resources/labs/lab-1/alice.txt">Пример отчета</a>
+Загрузите файл <a href="{{site.baseurl}}/resources/labs/lab-1/alice.txt" download class="download-link">alice.txt</a>
 Для того, чтобы открыть файл, имеется функция `open()`
 
 ```python
